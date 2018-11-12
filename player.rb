@@ -15,6 +15,11 @@ class Player
     @found_treasures = Hash.new(0)
   end
 
+  def self.from_csv(string)
+    name, health = string.split(',')
+    Player.new(name, Integer(health))
+  end
+
   def name=(new_name)
     @name = new_name.capitalize
   end
