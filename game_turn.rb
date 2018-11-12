@@ -3,6 +3,7 @@
 require_relative 'player'
 require_relative 'DIE'
 require_relative 'treasure_trove'
+require_relative 'loaded_die'
 
 #
 # GameTurn
